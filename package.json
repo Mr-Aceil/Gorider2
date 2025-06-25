@@ -1,6 +1,6 @@
 {
   "name": "go-rider",
-  // "homepage": "https://mr-aceil.github.io/Gorider2/",
+  "homepage": "https://mr-aceil.github.io/Gorider2/",
   "private": true,
   "version": "0.0.0",
   "type": "module",

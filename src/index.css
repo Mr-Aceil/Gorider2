@@ -1,0 +1,120 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'poppins';
+  src: url('./Fonts/Poppins-Light.ttf') format('truetype');
+  font-display: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'clash';
+  src: url('./Fonts/ClashDisplay-Medium.otf') format('opentype');
+  font-display: normal;
+  font-style: normal;
+}
+
+@theme{
+  /* Color */
+  --color-textmain: #ffffff;
+  --color-textsecondary: #000000;
+  --color-blackbg: #202020;
+  --color-textash: #cccccc;
+  --color-backgroundw: #F5E5FF;
+  --color-backgroundp: #ae29d6;
+  --color-purple: #570072;
+  --color-bgblur: #9696966c;
+
+  /* Text */
+  --text-h1: clamp(1.7em,6vw,4em);
+  --text-h12: clamp(1.1em,6vw,2.5em);
+  --text-h2: clamp(1.1em,4vw,2em);
+  --text-h3: clamp(1.1em,4vw,1.5rem);
+  --text-p: 1rem;
+
+  /* Spacing */
+  --spacing-header: 20px;
+  --spacing-CardHeight: 450px;
+  --spacing-section: 60px 0;
+  --spacing-section2: 60px;
+  --spacing-Image1p: 30px 30px;
+  --spacing-button: 10px 30px;
+  --spacing-button2: 10px 20px;
+  --spacing-smallgap: 10px;
+  --spacing-2: 20px;
+  --spacing-3: 30px;
+  --spacing-4: 40px;
+  --spacing-5: 50px;
+  --spacing-6: 60px;
+  --spacing-7: 70px;
+  --spacing-8: 80px;
+  --spacing-9: 90px;
+}
+
+*{
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+  /* color: #00000027; */
+}
+
+
+.poppins {
+  font-family: 'poppins', sans-serif;
+}
+
+.clash {
+  font-family: 'clash', sans-serif;
+}
+
+.in{
+  @apply flex w-full max-w-[1600px];
+}
+
+.in2{
+  @apply w-full max-w-[1600px];
+}
+
+.out{
+  @apply flex w-full p-header;
+}
+
+.out2{
+  @apply w-full p-header;
+}
+
+.jcenter{
+  @apply justify-center;
+}
+
+.between{
+  @apply justify-between;
+}
+
+.icenter{
+  @apply items-center;
+}
+
+.max1k{
+  @apply w-full max-w-[1000px];
+}
+
+.max1-6k{
+  @apply w-full max-w-[1600px];
+}
+
+.max8h{
+  @apply w-full max-w-[800px];
+}
+
+.section1span{
+  background-image: url('./assets/HomeImages/textwrap.png');
+  background-repeat: no-repeat;
+}
+
+.p60{
+  @apply pt-[60px]
+}
+
+a{
+  @apply text-textash hover:text-textmain
+}

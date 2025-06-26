@@ -8,7 +8,7 @@ import Card1 from './setion1Card'
 export default function section1() {
     return (
         <main className='out jcenter icenter'>
-            <div className='in jcenter icenter p-section pt-[130px] flex-col gap-5 text-textmain'>
+            <div className='in jcenter icenter p-section pt-[130px] max-[460px]:pt-110px flex-col gap-5 text-textmain'>
                 <div className='flex flex-col gap-2 jcenter icenter'>
                     <h1 className='text-h1 w-full max-w-[1000px] text-center text-bold clash'>Making every delivery worth the wait, we deliver convince</h1>
                     <p className='text-p w-full max-w-[1000px] text-center text-textash'>Send orders, what you want when you want, send or recive any time anywhere you want within your zone in minutes with flash riders on the G0!!!</p>

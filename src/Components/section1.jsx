@@ -18,7 +18,7 @@ export default function section1() {
                                 max-[370px]:flex-col
                                 max-[370px]:w-full'>
                     <Button link='http://wa.link/04k83f' name='Deliver now' others='max-[391px]:w-full border-1 border-solid border-white' bg='bg-transparent hover:bg-textash hover:text-textsecondary' textColor='text-textmain'/>
-                    <Button name='Join waitlist' others='max-[391px]:w-full' link='"https://gorider.ycode.site/#input-idh62pgii"' />
+                    <Button name='Join waitlist' others='max-[391px]:w-full' link="https://gorider.ycode.site/#input-idh62pgii" />
                 </div>
 
                 <div className='flex gap-smallgap icenter jcenter flex-wrap w-full max-w-[1000px]

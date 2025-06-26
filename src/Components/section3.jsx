@@ -3,6 +3,7 @@ import Tags from './tags'
 import Cards from './section3Cards'
 
 export default function section3() {
+    const img1= 'bg-[url("../src/assets/HomeImages/section3/sec3bg01.png")]'
     const img2= 'bg-[url("../src/assets/HomeImages/section3/sec3bg02.png")]'
     const img3= 'bg-[url("../src/assets/HomeImages/section3/sec3bg03.png")]'
 
@@ -20,9 +21,9 @@ export default function section3() {
                                 max-[310px]:icenter
                                 max-[310px]:jcenter
                                 max-[310px]:w-full gap-4'>
-                    <Cards name='Satisfaction'/>
-                    <Cards name='Reliability' bg={img2}/>
-                    <Cards name='Trust' bg={img3}/>
+                    <Cards name='Satisfaction' overlayt='"GoRider operates with certified standards, ensuring all deliveries meet professional, safety, and quality benchmarks required in modern logistics.' bg={img1}/>
+                    <Cards name='Reliability' overlayt='"We pride ourselves on dependable, on-time delivery—driven by a verified rider network and supported by smart, responsive tracking systems.' bg={img2}/>
+                    <Cards name='Trust' overlayt='"Your packages, your confidence. GoRider is built on secure transactions, clear communication, and total delivery accountability.' bg={img3}/>
                 </div>
             </div>
         </section>

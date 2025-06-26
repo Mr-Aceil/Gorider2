@@ -11,7 +11,7 @@ export default function QandAnswer({q='Add Question', ans='Add answer'}) {
 
 
     return (
-        <div onClickCapture={open} className='cursor-pointer flex flex-col gap-4 w-full border-[#00000027] border-1 border-solid p-2'>
+        <div onClickCapture={open} className='cursor-pointer rounded-[20px] flex flex-col gap-4 w-full border-[#00000027] border-1 border-solid p-2'>
             <div className='flex icenter jcenter gap-2 w-full between'>
                 <h3 className='text-h3'>{q}</h3>
                 {trigger}

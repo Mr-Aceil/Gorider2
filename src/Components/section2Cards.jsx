@@ -4,7 +4,7 @@ import LearnMore from './learnMore'
 
 export default function section2Cards({name='Fast Easy Ordering- Delivered in no time', rotate='rotate-[-6deg]', bg='bg-[url("../src/assets/HomeImages/section2/Img1.png")]', bg2='bg-[url("../src/assets/HomeImages/section2/tbg1.png")]'}) {
     return (
-        <div className={`${bg} bg-no-repeat bg-center bg-cover h-CardHeight grow-[1] p-smallgap rounded-[20px]`}>
+        <div className={`${bg} bg-sparebg bg-no-repeat bg-center bg-cover h-CardHeight grow-[1] p-smallgap rounded-[20px]`}>
             <div className='h-full w-full between flex flex-col'>
                 <LearnMore/>
 

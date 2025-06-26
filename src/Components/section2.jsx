@@ -14,7 +14,9 @@ export default function section2() {
             <div className='in jcenter icenter flex-col p-section gap-3'>
                 <h2 className='text-h2 font-bold max1k text-center'>Modernizing last-mile delivery through  innovation, smart tech, and empowered local riders</h2>
                 
-                <div className='flex max8h between icenter gap-2 flex-wrap'>
+                <div className='flex max8h between icenter gap-2 flex-wrap 
+                                max-[341px]:flex-col
+                                max-[341px]:justify-center'>
                     <div className='text-center flex flex-col '>
                         <p className='font-bold text-h12'>50+</p> 
                         <p className='text-h3'>Riders</p>

@@ -1,11 +1,13 @@
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 import Logo from '../assets/logo/white.png'
 import Pages from './Pages'
 import Button  from './Button'
 
 export default function Header() {
     const [Hamburger, setOpenHamburger]= useState(true)
+    const [scrolled, setScrolled]= useState(true)
 
+    // Hamburger
     const toggle= () => {
         setOpenHamburger(!Hamburger)
     }
@@ -13,14 +15,26 @@ export default function Header() {
     const hamburger= <svg onClick={toggle} xmlns="http://www.w3.org/2000/svg" width="30"  viewBox="0 0 24 24"><path fill="none" stroke="#fff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6h10M4 12h16M7 12h13M4 18h10"/></svg>
     const cancel= <svg onClick={toggle} xmlns="http://www.w3.org/2000/svg" width="30" viewBox="0 0 24 24"><path fill="none" stroke="#fff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M19 5L5 19M5 5l14 14" color="#fff"/></svg>
 
+
+    // Scroll bg
+    useEffect(()=>{
+        const handleScroll= ()=>{
+            setScrolled(window.scrollY > 0);
+        };
+        window.addEventListener('scroll', handleScroll);
+        return ()=>window.removeEventListener('scroll', handleScroll);
+    }, []);
+
     return (
-        <header className="out items-center justify-center p-header">
+        <header className={`fixed z-[2000] top-0 left-0 out items-center justify-center py-[10px] ${scrolled ? 'bg-backgroundpm': ''} `}>
             <nav className='in items-center justify-between'>
                 <img src={Logo} alt="Our logo" className='w-[100px]' />
                 <Pages  others='justify-center items-center max-[1040px]:hidden'/>
                 <div className=' flex items-center justify-center gap-smallgap
                                 max-[1040px]:hidden'>
+                    <a href="https://gorider.ycode.site/#input-idh62pgii" target='_blank'>
                     <Button name='Join the waitlist'/>
+                    </a>
                     <Button icon={web} name='EN'/>
                 </div>
 
@@ -28,7 +42,7 @@ export default function Header() {
                     <Button icon={web} name='EN'/>
                     {hamburger}
 
-                    <div className={`bg-bgblur fixed h-full w-full backdrop-blur-[10px] top-0 right-0 z-10 ${Hamburger ? 'translate-x-full' : 'translate-x-0'} transition-transform duration-300 ease-in-out`}>
+                    <div className={`bg-bgblur fixed h-[100vh] w-full backdrop-blur-[20px] top-0 right-0 z-10 ${Hamburger ? 'translate-x-full' : 'translate-x-0'} transition-transform duration-300 ease-in-out`}>
                         <div className='h-full w-full between flex flex-col max-w-[300px] bg-backgroundp fixed top-0 right-0 p-3'>
                             <div className='w-full flex flex-col gap-2'>
                                 <div className='flex items-center justify-end'>
@@ -38,7 +52,9 @@ export default function Header() {
                                 <Pages others='flex-col '/>
                             </div>
                             
-                            <Button name='Join us'/>
+                            
+                            <Button link='https://gorider.ycode.site/#input-idh62pgii' name='Join us'/>
+                            
                         </div>
                     </div>
                 </div>

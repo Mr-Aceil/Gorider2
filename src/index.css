@@ -20,8 +20,11 @@
   --color-textsecondary: #000000;
   --color-blackbg: #202020;
   --color-textash: #cccccc;
+  --color-bgasht: #11111185;
   --color-backgroundw: #F5E5FF;
   --color-backgroundp: #ae29d6;
+  --color-backgroundpm: #9351BE;
+  --color-sparebg: #494949;
   --color-purple: #570072;
   --color-bgblur: #9696966c;
 
@@ -54,7 +57,7 @@
 *{
   box-sizing: border-box;
   font-family: 'poppins', sans-serif;
-  /* color: #00000027; */
+  /* color: #ffffff85; */
 }
 
 
@@ -116,5 +119,5 @@
 }
 
 a{
-  @apply text-textash hover:text-textmain
+  @apply text-textash hover:text-textmain hover:underline;
 }

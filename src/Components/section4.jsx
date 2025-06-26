@@ -7,7 +7,7 @@ import Verify from '../../src/assets/HomeImages/section5/Trust2.png'
 export default function section4() {
     return (
         <>
-        <section className='out icenter jcenter bg-[url("../src/assets/HomeImages/section4/sec4bg.png")] bg-cover bg-no-repeat bg-center'>
+        <section className='out icenter jcenter bg-[url("../src/assets/HomeImages/section4/sec4bg.png")] bg-purple bg-cover bg-no-repeat bg-center'>
             <div className='in flex-col p-section icenter jcenter gap-6'>
                 <Tag name='Our App' icons=''/>
 
@@ -17,7 +17,7 @@ export default function section4() {
                     <div className='flex flex-col gap-4 grow-[1]'>
                         <h3 className='text-h1 text-textmain font-bold max-[1200px]:text-h2'>Your Trusted Partners for Local <span className='bg-backgroundp'>Delivery Needs.</span></h3>
                         <p className='text-h3 text-textmain'>Experience the best in delivery services.</p>
-                        <Button others='w-fit'/>
+                        <Button name='Join us' others='w-fit'/>
                     </div>
 
                     <img src={Iphone} className='w-[500px] 

@@ -10,7 +10,7 @@ import Faq from './Components/FAQ'
 export default function App() {
     return (
         <>
-        <div className="flex flex-col jcenter icenter bg-[url('./assets/HomeImages/Bg.png')] bg-center bg-no-reapeat bg-cover ">
+        <div className="flex flex-col jcenter icenter bg-[url('./assets/HomeImages/Bg.png')] bg-backgroundpm bg-center bg-no-reapeat bg-cover ">
             <Header />
             <Section1 />
         </div>

@@ -11,9 +11,9 @@ export default function Header() {
     const toggle= () => {
         setOpenHamburger(!Hamburger)
     }
-    const web= <svg xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 48 48"><g fill="none" stroke="#000" strokeWidth="3"><path strokeLinejoin="round" d="M3 24a21 21 0 1 0 42 0a21 21 0 1 0-42 0"/><path strokeLinejoin="round" d="M15 24a9 21 0 1 1 18 0a9 21 0 1 1-18 0"/><path strokeLinecap="round" d="M4.5 31h39m-39-14h39"/></g></svg>
-    const hamburger= <svg onClick={toggle} xmlns="http://www.w3.org/2000/svg" width="30"  viewBox="0 0 24 24"><path fill="none" stroke="#fff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6h10M4 12h16M7 12h13M4 18h10"/></svg>
-    const cancel= <svg onClick={toggle} xmlns="http://www.w3.org/2000/svg" width="30" viewBox="0 0 24 24"><path fill="none" stroke="#fff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M19 5L5 19M5 5l14 14" color="#fff"/></svg>
+    const web= <svg xmlns="http://www.w3.org/2000/svg" width="15" viewBox="0 0 48 48"><g fill="none" stroke="#000" strokeWidth="3"><path strokeLinejoin="round" d="M3 24a21 21 0 1 0 42 0a21 21 0 1 0-42 0"/><path strokeLinejoin="round" d="M15 24a9 21 0 1 1 18 0a9 21 0 1 1-18 0"/><path strokeLinecap="round" d="M4.5 31h39m-39-14h39"/></g></svg>
+    const hamburger= <svg onClick={toggle} xmlns="http://www.w3.org/2000/svg" className='w-[30px] max-[700px]:w-[20px]'  viewBox="0 0 24 24"><path fill="none" stroke="#fff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6h10M4 12h16M7 12h13M4 18h10"/></svg>
+    const cancel= <svg onClick={toggle} xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 24 24"><path fill="none" stroke="#fff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M19 5L5 19M5 5l14 14" color="#fff"/></svg>
 
 
     // Scroll bg
@@ -26,15 +26,14 @@ export default function Header() {
     }, []);
 
     return (
-        <header className={`fixed z-[2000] top-0 left-0 out items-center justify-center py-[10px] ${scrolled ? 'bg-backgroundpm': ''} `}>
+        <header className={`fixed z-[2000] top-0 left-0 out items-center justify-center py-[10px] ${scrolled ? 'bg-black': ''} `}>
             <nav className='in items-center justify-between'>
-                <img src={Logo} alt="Our logo" className='w-[100px]' />
+                <img src={Logo} alt="Our logo" className='w-[100px] max-[700px]:w-[65px]' />
                 <Pages  others='justify-center items-center max-[1040px]:hidden'/>
                 <div className=' flex items-center justify-center gap-smallgap
                                 max-[1040px]:hidden'>
-                    <a href="https://gorider.ycode.site/#input-idh62pgii" target='_blank'>
-                    <Button name='Join the waitlist'/>
-                    </a>
+                    
+                    <Button link="https://gorider.ycode.site/#input-idh62pgii" name='Join the waitlist'/>
                     <Button icon={web} name='EN'/>
                 </div>
 
